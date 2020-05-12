@@ -7,3 +7,8 @@ def import_csv():
     print('Hello')
     print('Keen')
 
+def hello():
+    return 0
+
+def print():
+    print('keen')
