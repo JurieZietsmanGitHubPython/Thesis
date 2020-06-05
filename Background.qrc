@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="Images">
+    <file>Images for QT/Warehouse.jpg</file>
+    <file>Images for QT/Moon.jpg</file>
+  </qresource>
+</RCC>
