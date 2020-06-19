@@ -10,6 +10,7 @@ import qdarkgraystyle
 
 warnings.filterwarnings("ignore")
 
+
 class GuiApplication(MainWindow):
 
     def __init__(self):
@@ -56,7 +57,6 @@ class GuiApplication(MainWindow):
     ############################################################
     # Signals for forecasting
     ############################################################
-
 
 app = QtWidgets.QApplication(sys.argv)
 window = GuiApplication()

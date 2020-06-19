@@ -1356,7 +1356,7 @@ QDateEdit::down-arrow:focus
        <enum>QFrame::Sunken</enum>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="homepage">
        <layout class="QGridLayout" name="gridLayout_9">
@@ -1836,7 +1836,7 @@ QDateEdit::down-arrow:focus
          </widget>
         </item>
         <item row="5" column="1">
-         <widget class="QProgressBar" name="progressBar_2">
+         <widget class="QProgressBar" name="data_processing_progressBar">
           <property name="value">
            <number>0</number>
           </property>
@@ -1914,8 +1914,13 @@ QDateEdit::down-arrow:focus
            <bool>false</bool>
           </property>
           <property name="currentText">
-           <string>Mean error</string>
+           <string>OWA</string>
           </property>
+          <item>
+           <property name="text">
+            <string>OWA</string>
+           </property>
+          </item>
           <item>
            <property name="text">
             <string>Mean error</string>

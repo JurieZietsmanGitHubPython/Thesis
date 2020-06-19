@@ -3,8 +3,8 @@ from PyQt5.QtWidgets import QFileDialog, QMessageBox, QTableWidgetItem
 import pandas as pd
 from PyQt5 import QtWidgets, uic, Qt
 import sys
+import sktime
 import ui_background
-
 
 class MainWindow(QtWidgets.QMainWindow):
 
@@ -15,6 +15,7 @@ class MainWindow(QtWidgets.QMainWindow):
     ##############################################################
     # Functions for testing
     ##############################################################
+
     def change_text(self):
         self.label_3.setText('lekker')
 
