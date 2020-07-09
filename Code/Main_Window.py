@@ -2,8 +2,9 @@ import sys
 import os
 import pandas as pd
 import numpy as np
-from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QHeaderView
+from PyQt5 import QtGui, QtWidgets
+from PyQt5.QtWidgets import QHeaderView, QApplication
+from PyQt5.QtCore import QObject, pyqtSignal, pyqtSlot
 from Functions import MainWindow
 import warnings
 import qdarkgraystyle
@@ -11,11 +12,14 @@ import qdarkgraystyle
 warnings.filterwarnings("ignore")
 
 
-class GuiApplication(MainWindow):
+class Gui_Application(MainWindow):
 
     def __init__(self):
         MainWindow.__init__(self)
-        self.setWindowIcon(QtGui.QIcon('Images for QT/Black_dot.png'))
+
+        ############################################################
+        # Threads
+        ############################################################
 
         ############################################################
         # Signals for startup, homepage, navigation and closing application
@@ -52,14 +56,36 @@ class GuiApplication(MainWindow):
 
         self.testButton.clicked.connect(self.print_import)
 
+        ############################################################
+        # Signals for forecasting
+        ############################################################
+
+        ############################################################
+        # Signals for order analysis
+        ############################################################
+
+        ############################################################
+        # Signals for order list
+        ############################################################
         self.orderlistButton.clicked.connect(self.createTable)
+        self.confirmlocalOrdersButton.clicked.connect(self.createTable)  # Just for testing
 
-    ############################################################
-    # Signals for forecasting
-    ############################################################
+        self.checkFeasibilityButton.clicked.connect(self.clearTable)
 
-app = QtWidgets.QApplication(sys.argv)
-window = GuiApplication()
-app.setStyleSheet(qdarkgraystyle.load_stylesheet())
-window.show()
-app.exec_()
+
+class Worker(QObject):
+    hashed = pyqtSignal(str, str)
+
+    @pyqtSlot(str)
+    def hash_directory(self, root):
+        hash_gen = recursive_hashes(Path(root))
+        for path, sha1_hash in hash_gen:
+            self.hashed.emit(path, sha1_hash)
+
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    window = Gui_Application()
+    app.setStyleSheet(qdarkgraystyle.load_stylesheet())
+    window.show()
+    sys.exit(app.exec_())

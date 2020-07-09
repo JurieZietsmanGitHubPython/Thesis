@@ -1,16 +1,25 @@
+from PyQt5.QtCore import pyqtSlot as Slot
 from PyQt5.QtGui import QCursor
-from PyQt5.QtWidgets import QFileDialog, QMessageBox, QTableWidgetItem
+from PyQt5.QtWidgets import QFileDialog, QMessageBox, QTableWidgetItem, QMainWindow
+from PyQt5 import uic, Qt, QtGui
+
 import pandas as pd
-from PyQt5 import QtWidgets, uic, Qt
 import sys
 import sktime
 import ui_background
 
-class MainWindow(QtWidgets.QMainWindow):
+from sktime.forecasting.theta import ThetaForecaster
+from sktime.forecasting.model_selection import temporal_train_test_split
+from sktime.performance_metrics.forecasting import smape_loss
+import numpy as np
+
+
+class MainWindow(QMainWindow):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         uic.loadUi("C:/Users/Jurie/PycharmProjects/Thesis/User Interface/main_window.ui", self)
+        self.setWindowIcon(QtGui.QIcon('Images for QT/Black_dot.png'))
 
     ##############################################################
     # Functions for testing
@@ -23,12 +32,14 @@ class MainWindow(QtWidgets.QMainWindow):
     #     print(df)
     #     print(type(df))
 
+    # @Slot()
     def printer(self, dataframe):
         print(dataframe)
 
     ##############################################################
     # Functions for homepage, navigation and closing application
     ##############################################################
+    #@Slot()
     def on_startButton_clicked(self):
         self.stack.setCurrentIndex(1)
 
@@ -48,14 +59,13 @@ class MainWindow(QtWidgets.QMainWindow):
     ##############################################################
     # Functions for data processing
     ##############################################################
-
+    #@Slot(str)
     def import_csv(self, button):
         """
     Reads csv file from document explorer
         """
         filePath, _ = QFileDialog.getOpenFileName(self, 'Choose a file', '\Home', filter="csv(*.csv)")
         if filePath != "":
-            self.QGuiApplication.setOverrideCursor(QCursor(Qt.WaitCursor))
             data = pd.read_csv(str(filePath))
 
         if button == "historicSales":
@@ -65,7 +75,7 @@ class MainWindow(QtWidgets.QMainWindow):
                              'USER NAME', 'TYPEOFSALE', 'SLM', 'INVOICE NUMBER', 'NAME', '.',
                              'THREAD', 'PL', 'COSTVAL', 'SALES VALUE', 'OVERBY', 'DESCRIPT',
                              'INDUSTRY CODE', 'CONTRIBUTION%', 'GLGROUP', 'TRNSPCODE',
-                             ' ']  # These should be selected by the user
+                             ' ']
             data.drop(column_remove, axis=1, inplace=True)
             data = data.groupby(['POSTING DATE', 'STOCKNO']).sum()
 
@@ -90,8 +100,6 @@ class MainWindow(QtWidgets.QMainWindow):
         if button == "backlogData":
             self.backlogData = data
 
-        self.QGuiApplication.restoreOverrideCursor()
-
     def print_import(self):
         print(self.historicSales)
         print(type(self.historicSales))
@@ -105,11 +113,17 @@ class MainWindow(QtWidgets.QMainWindow):
         Perform forecast for each SKU in skuList
         """
         pass
+
+        historicDataUsed = self.historicUsageSpinBox.value()  # Get number of years of data to use
+        forecastingPeriod = self.forecastPeriodSpinBox.value()  # Get forecasting period to use
+        forecastingPeriodType = self.periodTypeComboBox.value()  # Get forecasting period type to use
+
         for sku in skuList:
             skuHistoric = historicSales[historicSales.index.isin([sku], level='STOCKNO')]
             skuHistoric.index = skuHistoric.index.droplevel('STOCKNO')
             skuHistoric = skuHistoric.resample('M').sum()
             print(skuHistoric)
+
 
     def evaluate_forecast(self, y_pred, y_true, metric):
         """
@@ -136,10 +150,23 @@ class MainWindow(QtWidgets.QMainWindow):
         """
         Populate table widgets to list suggested local and import orders
         """
-        # Need to set number of rows
-        # Need to set number of columns
-        self.localOrderTableWidget.setItem(1, 0, QTableWidgetItem("0099"))
-        self.localOrderTableWidget.setItem(2, 0, QTableWidgetItem("0022"))
+        # Set number of rows
+        self.localOrderTableWidget.setRowCount(2)
+        self.importOrderTableWidget.setRowCount(2)
 
-        self.importOrderTableWidget.setItem(3, 0, QTableWidgetItem("0066"))
-        self.importOrderTableWidget.setItem(4, 0, QTableWidgetItem("0088"))
+        # Populate rows
+        self.localOrderTableWidget.setItem(0, 0, QTableWidgetItem("0099"))
+        self.localOrderTableWidget.setItem(1, 0, QTableWidgetItem("0022"))
+
+        self.importOrderTableWidget.setItem(0, 0, QTableWidgetItem("0066"))
+        self.importOrderTableWidget.setItem(1, 0, QTableWidgetItem("0088"))
+
+    def clearTable(self):
+        """
+        Clear table widget from current contents
+        """
+        while self.localOrderTableWidget.rowCount() > 0:
+            self.localOrderTableWidget.removeRow(0)
+
+        while self.importOrderTableWidget.rowCount() > 0:
+            self.importOrderTableWidget.removeRow(0)
