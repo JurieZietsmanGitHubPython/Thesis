@@ -31,6 +31,7 @@ class Gui_Application(MainWindow):
 
         self.startButton.clicked.connect(self.on_startButton_clicked)
         self.forecastingButton.clicked.connect(self.nextStack)
+        self.finaliseForecastpushButton.clicked.connect(self.nextStack)
         self.orderanalysisButton.clicked.connect(self.nextStack)
         self.orderlistButton.clicked.connect(self.nextStack)
         self.quitButton.clicked.connect(self.close_application)
@@ -54,7 +55,7 @@ class Gui_Application(MainWindow):
         self.warehouseInfoButton.clicked.connect(lambda: self.import_csv("warehouseInfo"))
         self.backlogDataButton.clicked.connect(lambda: self.import_csv("backlogData"))
 
-        self.testButton.clicked.connect(self.print_import)
+        # self.testButton.clicked.connect(self.print_import)
 
         ############################################################
         # Signals for forecasting

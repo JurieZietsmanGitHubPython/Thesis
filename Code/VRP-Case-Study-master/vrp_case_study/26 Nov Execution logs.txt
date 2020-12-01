@@ -1,0 +1,545 @@
+"D:\Users\Aaron\Documents\Git Repositories\HGSADC\venv\Scripts\python.exe" "D:\Users\Aaron\Documents\Git Repositories\VRP-Case-Study\vrp_case_study\validation.py"
+Feasible Individual with 211 stops and cost 1564771.872916667
+Link (capacity 40):
+22-B (36)
+41-C (39)
+23-B (40)
+85-K (30)
+8 Metre (capacity 22):
+156-S (17) -> 132-P (5)
+17-B (10) -> 164-S (1) -> 197-W (11)
+207-Y (22)
+83-H (22)
+119-O (12) -> 2-A (10)
+46-D (20)
+188-V (20)
+151-R (20)
+56-F (11) -> 118-N (9)
+72-G (15) -> 18-B (7)
+58-G (15) -> 22-B (7)
+142-P (22)
+50-D (2) -> 78-H (6) -> 113-M (4) -> 94-K (6) -> 102-L (4)
+35-C (21)
+168-S (13) -> 17-B (7)
+163-S (18) -> 3-A (4)
+186-V (22)
+205-W (9) -> 45-D (6) -> 206-W (7)
+144-Q (21) -> 106-M (1)
+157-S (10) -> 28-C (11) -> 11-B (1)
+121-O (4) -> 143-P (6) -> 193-V (7) -> 185-V (5)
+135-P (11) -> 95-K (3) -> 182-U (7)
+151-R (22)
+173-T (13) -> 131-P (7)
+40-C (22)
+57-F (21)
+89-K (22)
+158-S (22)
+84-K (22)
+11 Metre (capacity 30):
+59-G (30)
+154-S (1) -> 68-G (8) -> 1-A (21)
+72-G (30)
+29-C (30)
+18-B (17) -> 200-W (13)
+96-K (27)
+152-R (4) -> 15-B (26)
+139-P (30)
+24-B (9) -> 25-C (7) -> 59-G (11)
+40-C (30)
+117-N (2) -> 126-P (14) -> 125-P (14)
+157-S (15) -> 95-K (15)
+135-P (15) -> 33-C (5) -> 182-U (10)
+121-O (14) -> 143-P (15)
+66-G (19) -> 168-S (11)
+69-G (30)
+153-S (30)
+91-K (27)
+49-D (30)
+208-Z (30)
+29-C (10) -> 1-A (20)
+12-B (20)
+81-H (5) -> 91-K (23)
+193-V (6) -> 19-B (12) -> 101-L (10)
+104-M (12) -> 100-L (15) -> 153-S (3)
+95-K (30)
+201-W (30)
+111-M (30)
+99-L (30)
+124-O (30)
+150-R (30)
+109-M (30)
+104-M (30)
+15-B (30)
+98-L (30)
+99-L (10) -> 26-C (20)
+149-R (30)
+150-R (19) -> 149-R (7) -> 165-S (4)
+110-M (7) -> 176-T (8) -> 174-T (14) -> 60-G (1)
+172-S (20) -> 111-M (10)
+109-M (28)
+156-S (20) -> 132-P (10)
+10-B (30)
+76-H (20) -> 10-B (10)
+17-B (29) -> 164-S (1)
+53-E (14) -> 130-P (16)
+3-A (26) -> 51-D (4)
+29-C (28)
+154-S (30)
+11-B (2) -> 208-Z (11) -> 97-K (14)
+69-G (30)
+157-S (1) -> 193-V (6) -> 143-P (12) -> 121-O (11)
+178-T (28) -> 61-G (2)
+45-D (7) -> 175-T (23)
+185-V (17)
+19-B (2) -> 28-C (17) -> 101-L (11)
+69-G (30)
+147-R (7)
+85-K (30)
+20-B (30)
+84-K (30)
+116-N (5) -> 85-K (23)
+20-B (18)
+92-K (30)
+Rigid (capacity 16):
+7-B (4) -> 188-V (6) -> 39-C (5)
+120-O (9) -> 198-W (6)
+80-H (16)
+69-G (15)
+134-P (13)
+92-K (16)
+112-M (2) -> 198-W (7) -> 42-C (1)
+51-D (12)
+62-G (13) -> 155-S (1) -> 87-K (2)
+47-D (12) -> 166-S (4)
+128-P (14)
+105-M (5) -> 46-D (4) -> 115-N (7)
+191-V (4) -> 48-D (10) -> 96-K (2)
+186-V (16)
+134-P (8) -> 171-S (5)
+93-K (10) -> 151-R (6)
+8-B (5) -> 33-C (5)
+142-P (4) -> 12-B (11)
+130-P (3) -> 53-E (13)
+13-B (16)
+9-B (11)
+97-K (15)
+75-H (3) -> 135-P (6)
+90-K (16)
+128-P (1)
+128-P (1)
+128-P (1)
+195-W (1)
+83-H (16)
+69-G (7)
+158-S (13)
+
+Importing Data
+Starting Run
+2020-10-09 19:04:51,412:INFO:main:_run_with_single_processing: Initialising single process run.
+2020-10-09 19:04:51,412:INFO:main:_run_with_single_processing: Seeding population with 1 solutions.
+2020-10-09 19:04:51,412:INFO:main:_run_with_single_processing: Seeded solution Feasible Individual with 211 stops and cost 1564771.872916667 set as best:
+{"3": [[[22, 36]], [[41, 39]], [[23, 40]], [[85, 30]]], "1": [[[156, 17], [132, 5]], [[17, 10], [164, 1], [197, 11]], [[207, 22]], [[83, 22]], [[119, 12], [2, 10]], [[46, 20]], [[188, 20]], [[151, 20]], [[56, 11], [118, 9]], [[72, 15], [18, 7]], [[58, 15], [22, 7]], [[142, 22]], [[50, 2], [78, 6], [113, 4], [94, 6], [102, 4]], [[35, 21]], [[168, 13], [17, 7]], [[163, 18], [3, 4]], [[186, 22]], [[205, 9], [45, 6], [206, 7]], [[144, 21], [106, 1]], [[157, 10], [28, 11], [11, 1]], [[121, 4], [143, 6], [193, 7], [185, 5]], [[135, 11], [95, 3], [182, 7]], [[151, 22]], [[173, 13], [131, 7]], [[40, 22]], [[57, 21]], [[89, 22]], [[158, 22]], [[84, 22]]], "2": [[[59, 30]], [[154, 1], [68, 8], [1, 21]], [[72, 30]], [[29, 30]], [[18, 17], [200, 13]], [[96, 27]], [[152, 4], [15, 26]], [[139, 30]], [[24, 9], [25, 7], [59, 11]], [[40, 30]], [[117, 2], [126, 14], [125, 14]], [[157, 15], [95, 15]], [[135, 15], [33, 5], [182, 10]], [[121, 14], [143, 15]], [[66, 19], [168, 11]], [[69, 30]], [[153, 30]], [[91, 27]], [[49, 30]], [[208, 30]], [[29, 10], [1, 20]], [[12, 20]], [[81, 5], [91, 23]], [[193, 6], [19, 12], [101, 10]], [[104, 12], [100, 15], [153, 3]], [[95, 30]], [[201, 30]], [[111, 30]], [[99, 30]], [[124, 30]], [[150, 30]], [[109, 30]], [[104, 30]], [[15, 30]], [[98, 30]], [[99, 10], [26, 20]], [[149, 30]], [[150, 19], [149, 7], [165, 4]], [[110, 7], [176, 8], [174, 14], [60, 1]], [[172, 20], [111, 10]], [[109, 28]], [[156, 20], [132, 10]], [[10, 30]], [[76, 20], [10, 10]], [[17, 29], [164, 1]], [[53, 14], [130, 16]], [[3, 26], [51, 4]], [[29, 28]], [[154, 30]], [[11, 2], [208, 11], [97, 14]], [[69, 30]], [[157, 1], [193, 6], [143, 12], [121, 11]], [[178, 28], [61, 2]], [[45, 7], [175, 23]], [[185, 17]], [[19, 2], [28, 17], [101, 11]], [[69, 30]], [[147, 7]], [[85, 30]], [[20, 30]], [[84, 30]], [[116, 5], [85, 23]], [[20, 18]], [[92, 30]]], "0": [[[7, 4], [188, 6], [39, 5]], [[120, 9], [198, 6]], [[80, 16]], [[69, 15]], [[134, 13]], [[92, 16]], [[112, 2], [198, 7], [42, 1]], [[51, 12]], [[62, 13], [155, 1], [87, 2]], [[47, 12], [166, 4]], [[128, 14]], [[105, 5], [46, 4], [115, 7]], [[191, 4], [48, 10], [96, 2]], [[186, 16]], [[134, 8], [171, 5]], [[93, 10], [151, 6]], [[8, 5], [33, 5]], [[142, 4], [12, 11]], [[130, 3], [53, 13]], [[13, 16]], [[9, 11]], [[97, 15]], [[75, 3], [135, 6]], [[90, 16]], [[128, 1]], [[128, 1]], [[128, 1]], [[195, 1]], [[83, 16]], [[69, 7]], [[158, 13]]]}
+2020-10-09 19:04:51,412:INFO:hgsadc:generate_random_individuals: Generating 100 random solutions
+2020-10-09 19:04:52,137:INFO:main:_run_with_single_processing: Starting best solution: Feasible Individual with 211 stops and cost 1564771.872916667
+2020-10-09 19:04:52,138:INFO:main:_run_with_single_processing: Beginning main iteration loop
+2020-10-09 19:05:59,027:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 168 stops and cost 1547009.506333333
+2020-10-09 19:06:44,212:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 100
+2020-10-09 19:07:27,336:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1518330.990333333
+2020-10-09 19:08:10,924:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 174 stops and cost 1513364.4806666675
+2020-10-09 19:08:15,361:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 176 stops and cost 1512137.1557500002
+2020-10-09 19:08:21,050:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 175 stops and cost 1503605.0726666667
+2020-10-09 19:08:34,643:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1501977.343
+2020-10-09 19:08:35,865:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 200
+2020-10-09 19:09:38,496:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1493746.795333333
+2020-10-09 19:10:30,352:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 300
+2020-10-09 19:10:46,410:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1493327.220666667
+2020-10-09 19:11:02,610:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1491562.28475
+2020-10-09 19:12:06,850:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 172 stops and cost 1473016.8059166663
+2020-10-09 19:12:22,894:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 400
+2020-10-09 19:14:18,149:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 500
+2020-10-09 19:14:36,057:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 173 stops and cost 1472143.7071666666
+2020-10-09 19:15:11,805:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1464257.2938333328
+2020-10-09 19:15:24,056:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 175 stops and cost 1463700.6145
+2020-10-09 19:16:14,779:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 600
+2020-10-09 19:16:22,797:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 174 stops and cost 1458881.7164999996
+2020-10-09 19:16:49,575:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 173 stops and cost 1454538.3313333336
+2020-10-09 19:18:04,670:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1452403.1219166664
+2020-10-09 19:18:09,163:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 700
+2020-10-09 19:20:00,317:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 173 stops and cost 1442102.807833333
+2020-10-09 19:20:08,645:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 800
+2020-10-09 19:22:10,431:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 900
+2020-10-09 19:22:57,929:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 173 stops and cost 1439949.764916666
+2020-10-09 19:24:09,175:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 1000
+2020-10-09 19:24:09,175:INFO:main:_run_with_single_processing: Decomposing solution on iteration 1000
+2020-10-09 19:24:09,177:INFO:main:_decompose_and_solve: Starting decomposed run for sub-problem with 133 customers.
+2020-10-09 19:24:09,178:INFO:main:_run_with_single_processing: Initialising single process run.
+2020-10-09 19:24:09,178:INFO:hgsadc:generate_random_individuals: Generating 100 random solutions
+2020-10-09 19:24:09,919:INFO:main:_run_with_single_processing: Starting best solution: Feasible Individual with 183 stops and cost 1723350.814833334
+2020-10-09 19:24:09,919:INFO:main:_run_with_single_processing: Beginning main iteration loop
+2020-10-09 19:24:12,164:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 192 stops and cost 1664119.7837500002
+2020-10-09 19:24:17,814:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 185 stops and cost 1662603.3812500003
+2020-10-09 19:24:22,542:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 185 stops and cost 1608542.141083333
+2020-10-09 19:25:06,692:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 182 stops and cost 1597130.2290833334
+2020-10-09 19:25:14,286:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 176 stops and cost 1565913.864916667
+2020-10-09 19:26:02,351:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 100
+2020-10-09 19:26:09,200:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 180 stops and cost 1530396.0930833337
+2020-10-09 19:26:59,838:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 178 stops and cost 1515980.8022499995
+2020-10-09 19:27:19,123:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 178 stops and cost 1514061.5122499997
+2020-10-09 19:27:57,668:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 200
+2020-10-09 19:29:23,221:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 177 stops and cost 1497117.8588333328
+2020-10-09 19:29:54,198:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 300
+2020-10-09 19:31:50,583:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 400
+2020-10-09 19:32:34,476:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 177 stops and cost 1488578.0887499996
+2020-10-09 19:33:23,048:INFO:main:_run_with_single_processing: Stopping on iteration 477, because max time limit hit.
+2020-10-09 19:33:23,048:INFO:main:_run_with_single_processing: Best solution was found on iteration 435
+2020-10-09 19:35:23,633:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 1100
+2020-10-09 19:37:04,760:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1439107.3237499997
+2020-10-09 19:37:23,258:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 1200
+2020-10-09 19:38:22,720:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1437521.2560833325
+2020-10-09 19:38:33,767:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 169 stops and cost 1434714.403833333
+2020-10-09 19:39:05,127:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 172 stops and cost 1433443.6246666664
+2020-10-09 19:39:23,731:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 1300
+2020-10-09 19:40:00,193:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1431713.8654999991
+2020-10-09 19:40:09,603:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1430885.820166666
+2020-10-09 19:40:18,411:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 174 stops and cost 1429734.6631666662
+2020-10-09 19:40:45,234:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1423185.8354999993
+2020-10-09 19:41:27,123:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 1400
+2020-10-09 19:43:30,757:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 1500
+2020-10-09 19:43:38,258:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1422502.2490833325
+2020-10-09 19:44:42,290:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1422009.8317499997
+2020-10-09 19:44:57,599:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1420307.68925
+2020-10-09 19:45:33,954:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 1600
+2020-10-09 19:47:39,934:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 1700
+2020-10-09 19:47:42,403:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1419127.8876666664
+2020-10-09 19:49:42,473:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 1800
+2020-10-09 19:51:00,220:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 172 stops and cost 1419107.7384999995
+2020-10-09 19:51:02,541:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1418201.6051666662
+2020-10-09 19:51:49,082:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 1900
+2020-10-09 19:51:59,674:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1418085.2001666664
+2020-10-09 19:53:55,558:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 2000
+2020-10-09 19:53:55,558:INFO:main:_run_with_single_processing: Decomposing solution on iteration 2000
+2020-10-09 19:53:55,561:INFO:main:_decompose_and_solve: Starting decomposed run for sub-problem with 132 customers.
+2020-10-09 19:53:55,561:INFO:main:_run_with_single_processing: Initialising single process run.
+2020-10-09 19:53:55,561:INFO:hgsadc:generate_random_individuals: Generating 100 random solutions
+2020-10-09 19:53:56,230:INFO:main:_run_with_single_processing: Starting best solution: Feasible Individual with 194 stops and cost 1760359.783583334
+2020-10-09 19:53:56,230:INFO:main:_run_with_single_processing: Beginning main iteration loop
+2020-10-09 19:53:57,346:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 188 stops and cost 1692203.6154166667
+2020-10-09 19:54:01,838:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 185 stops and cost 1645265.16575
+2020-10-09 19:54:24,793:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 188 stops and cost 1631295.1909999994
+2020-10-09 19:54:31,495:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 182 stops and cost 1574755.5095833333
+2020-10-09 19:54:50,668:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 186 stops and cost 1569770.2271666666
+2020-10-09 19:55:20,504:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 180 stops and cost 1557132.999416667
+2020-10-09 19:55:47,451:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 100
+2020-10-09 19:56:29,582:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 180 stops and cost 1541745.9661666662
+2020-10-09 19:56:58,088:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 178 stops and cost 1523502.8231666663
+2020-10-09 19:57:39,903:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 200
+2020-10-09 19:58:58,575:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 178 stops and cost 1520487.2992499995
+2020-10-09 19:58:59,663:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 179 stops and cost 1516797.1994166663
+2020-10-09 19:59:31,453:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 178 stops and cost 1514086.2410833328
+2020-10-09 19:59:33,710:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 300
+2020-10-09 19:59:37,515:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 177 stops and cost 1490056.770583333
+2020-10-09 20:01:27,954:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 400
+2020-10-09 20:03:10,296:INFO:main:_run_with_single_processing: Stopping on iteration 489, because max time limit hit.
+2020-10-09 20:03:10,296:INFO:main:_run_with_single_processing: Best solution was found on iteration 303
+2020-10-09 20:03:14,119:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1417772.1994999992
+2020-10-09 20:05:03,100:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1415076.3484166663
+2020-10-09 20:05:15,264:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 2100
+2020-10-09 20:07:11,642:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1414253.5664166661
+2020-10-09 20:07:18,995:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 2200
+2020-10-09 20:08:03,076:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1413814.2939166662
+2020-10-09 20:08:16,871:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1413012.4579166663
+2020-10-09 20:08:27,612:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1411391.9847499996
+2020-10-09 20:09:29,183:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 2300
+2020-10-09 20:10:16,173:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1411080.5623333324
+2020-10-09 20:10:28,786:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1408024.6353333336
+2020-10-09 20:11:43,036:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 2400
+2020-10-09 20:12:39,846:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1407676.889999999
+2020-10-09 20:13:48,055:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1406928.6413333323
+2020-10-09 20:13:53,504:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1406889.875666666
+2020-10-09 20:13:59,345:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 2500
+2020-10-09 20:14:22,921:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1405511.9623333325
+2020-10-09 20:14:41,642:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1404771.4625833328
+2020-10-09 20:16:17,185:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 2600
+2020-10-09 20:16:44,925:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1403265.6385833323
+2020-10-09 20:17:12,628:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1402450.3535833324
+2020-10-09 20:18:33,236:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1401088.0495833326
+2020-10-09 20:18:34,445:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 2700
+2020-10-09 20:20:50,523:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 2800
+2020-10-09 20:23:07,083:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 2900
+2020-10-09 20:24:10,652:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 172 stops and cost 1400295.7723333333
+2020-10-09 20:25:30,101:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 3000
+2020-10-09 20:25:30,102:INFO:main:_run_with_single_processing: Decomposing solution on iteration 3000
+2020-10-09 20:25:30,104:INFO:main:_decompose_and_solve: Starting decomposed run for sub-problem with 130 customers.
+2020-10-09 20:25:30,104:INFO:main:_run_with_single_processing: Initialising single process run.
+2020-10-09 20:25:30,104:INFO:hgsadc:generate_random_individuals: Generating 100 random solutions
+2020-10-09 20:25:30,758:INFO:main:_run_with_single_processing: Starting best solution: Feasible Individual with 179 stops and cost 1740924.3815000008
+2020-10-09 20:25:30,758:INFO:main:_run_with_single_processing: Beginning main iteration loop
+2020-10-09 20:25:31,886:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 177 stops and cost 1692702.2619999996
+2020-10-09 20:25:39,020:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 190 stops and cost 1667987.9032499995
+2020-10-09 20:25:41,356:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 180 stops and cost 1645711.9557499993
+2020-10-09 20:26:01,596:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 184 stops and cost 1638172.1034166669
+2020-10-09 20:26:18,020:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 178 stops and cost 1612052.6526666668
+2020-10-09 20:26:35,006:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 179 stops and cost 1603629.9138333334
+2020-10-09 20:26:53,242:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 178 stops and cost 1561840.4797500004
+2020-10-09 20:27:26,297:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 100
+2020-10-09 20:28:30,658:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 177 stops and cost 1538553.7025833344
+2020-10-09 20:29:22,405:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 200
+2020-10-09 20:29:58,479:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 182 stops and cost 1538304.7221666672
+2020-10-09 20:30:10,755:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 181 stops and cost 1531248.5299999996
+2020-10-09 20:30:42,409:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 179 stops and cost 1530151.4447499996
+2020-10-09 20:31:16,777:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 300
+2020-10-09 20:31:57,490:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 177 stops and cost 1520160.6306666662
+2020-10-09 20:32:09,146:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 177 stops and cost 1517596.0327499995
+2020-10-09 20:32:31,836:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 179 stops and cost 1510868.2560833332
+2020-10-09 20:33:17,292:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 400
+2020-10-09 20:33:50,276:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 177 stops and cost 1498915.5606666666
+2020-10-09 20:34:00,395:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 177 stops and cost 1479476.4289999995
+2020-10-09 20:34:44,390:INFO:main:_run_with_single_processing: Stopping on iteration 473, because max time limit hit.
+2020-10-09 20:34:44,390:INFO:main:_run_with_single_processing: Best solution was found on iteration 435
+2020-10-09 20:35:32,632:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1399764.2624999993
+2020-10-09 20:37:07,466:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 3100
+2020-10-09 20:38:36,030:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1399317.8629999994
+2020-10-09 20:39:25,928:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 3200
+2020-10-09 20:39:38,417:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 171 stops and cost 1399297.475916666
+2020-10-09 20:41:47,776:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 3300
+2020-10-09 20:43:28,129:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 168 stops and cost 1398958.139166666
+2020-10-09 20:43:43,299:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1398811.227499999
+2020-10-09 20:44:08,057:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 3400
+2020-10-09 20:44:56,543:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1398798.8856666656
+2020-10-09 20:44:59,189:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1397998.6843333326
+2020-10-09 20:46:28,894:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 3500
+2020-10-09 20:47:10,612:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1397502.712666666
+2020-10-09 20:48:10,993:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1396476.8686666659
+2020-10-09 20:48:54,400:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 3600
+2020-10-09 20:51:17,148:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 3700
+2020-10-09 20:53:40,028:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 3800
+2020-10-09 20:55:58,147:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 3900
+2020-10-09 20:58:19,531:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 4000
+2020-10-09 20:58:19,531:INFO:main:_run_with_single_processing: Decomposing solution on iteration 4000
+2020-10-09 20:59:22,582:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 169 stops and cost 1396377.8046666654
+2020-10-09 20:59:36,212:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 169 stops and cost 1396080.4086666657
+2020-10-09 21:00:02,009:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1395521.3736666655
+2020-10-09 21:00:39,207:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1395408.9436666653
+2020-10-09 21:00:43,973:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 4100
+2020-10-09 21:03:09,071:INFO:main:_run_with_single_processing: Adjusting parameters on iteration 4200
+2020-10-09 21:04:06,344:INFO:main:_run_with_single_processing: New best solution: 
+Feasible Individual with 170 stops and cost 1395249.4233333324
+2020-10-09 21:04:51,438:INFO:main:_run_with_single_processing: Stopping on iteration 4270, because max time limit hit.
+2020-10-09 21:04:51,439:INFO:main:_run_with_single_processing: Best solution was found on iteration 4239
+Run time: 7200.2668687000005
+Pretty output:
+Rigid (capacity 16):
+186-V (8)
+45-D (13) -> 11-B (3)
+29-C (16)
+100-L (15)
+8 Metre (capacity 22):
+130-P (19)
+207-Y (22)
+76-H (20) -> 61-G (2)
+134-P (21)
+185-V (22)
+172-S (20)
+29-C (22)
+89-K (22)
+11 Metre (capacity 30):
+125-P (14) -> 132-P (15)
+101-L (21) -> 195-W (1)
+91-K (22) -> 81-H (5) -> 112-M (2)
+135-P (30)
+69-G (30)
+85-K (30)
+143-P (30)
+198-W (13)
+176-T (8) -> 35-C (21)
+93-K (10) -> 151-R (18)
+152-R (4) -> 104-M (26)
+156-S (30)
+98-L (30)
+84-K (30)
+1-A (11) -> 72-G (15)
+131-P (7) -> 95-K (18)
+17-B (16) -> 19-B (14)
+9-B (11) -> 8-B (5) -> 33-C (10)
+69-G (30)
+97-K (29)
+46-D (24) -> 39-C (5)
+96-K (29)
+188-V (26)
+182-U (17) -> 118-N (9) -> 143-P (3)
+28-C (28)
+22-B (13) -> 58-G (15)
+29-C (30)
+49-D (30)
+91-K (28)
+56-F (11) -> 66-G (19)
+90-K (16) -> 200-W (13)
+15-B (30)
+17-B (30)
+150-R (30)
+18-B (24)
+1-A (30)
+68-G (8) -> 193-V (19) -> 75-H (3)
+40-C (30)
+186-V (30)
+139-P (30)
+83-H (30)
+158-S (30)
+95-K (30)
+92-K (30)
+69-G (22) -> 50-D (2) -> 78-H (6)
+12-B (1) -> 57-F (21) -> 113-M (4)
+72-G (30)
+13-B (16) -> 173-T (13)
+53-E (27)
+175-T (23) -> 206-W (7)
+156-S (7) -> 80-H (16)
+87-K (2) -> 155-S (1) -> 94-K (6) -> 102-L (4) -> 62-G (13)
+24-B (9) -> 150-R (19)
+40-C (22) -> 110-M (7) -> 60-G (1)
+12-B (30)
+121-O (29)
+168-S (24) -> 7-B (4)
+51-D (16) -> 171-S (5) -> 120-O (9)
+174-T (14) -> 104-M (16)
+191-V (4) -> 157-S (26)
+124-O (30)
+128-P (17) -> 48-D (10)
+20-B (30)
+105-M (5) -> 166-S (4) -> 115-N (7) -> 164-S (2) -> 47-D (12)
+205-W (9) -> 144-Q (21)
+69-G (30)
+59-G (11) -> 92-K (16)
+109-M (28) -> 106-M (1)
+25-C (7) -> 111-M (16) -> 149-R (7)
+20-B (18) -> 116-N (5)
+111-M (24) -> 165-S (4)
+147-R (7) -> 85-K (23)
+109-M (30)
+178-T (28)
+149-R (30)
+99-L (30)
+142-P (26)
+158-S (5) -> 84-K (22)
+85-K (30)
+15-B (26)
+151-R (30)
+3-A (30)
+2-A (10) -> 119-O (12) -> 83-H (8)
+208-Z (30)
+22-B (30)
+59-G (30)
+135-P (2) -> 197-W (11) -> 117-N (2) -> 126-P (14)
+163-S (18) -> 208-Z (11)
+26-C (20) -> 99-L (10)
+201-W (30)
+Link (capacity 40):
+42-C (1) -> 153-S (33)
+23-B (40)
+154-S (31)
+10-B (40)
+41-C (39)
+
+
+Process finished with exit code 0

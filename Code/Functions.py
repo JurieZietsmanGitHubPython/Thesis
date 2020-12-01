@@ -1,5 +1,4 @@
 from PyQt5.QtCore import pyqtSlot as Slot
-from PyQt5.QtGui import QCursor
 from PyQt5.QtWidgets import QFileDialog, QMessageBox, QTableWidgetItem, QMainWindow
 from PyQt5 import uic, Qt, QtGui
 
@@ -41,14 +40,23 @@ class MainWindow(QMainWindow):
     ##############################################################
     #@Slot()
     def on_startButton_clicked(self):
+        """
+        Sets QStack index when start button is clicked
+        """
         self.stack.setCurrentIndex(1)
 
     def nextStack(self):
+        """
+        Navigates to the next stack in QStack object
+        """
         index = self.stack.currentIndex()
         index = index + 1
         self.stack.setCurrentIndex(index)
 
     def close_application(self):
+        """
+        Closes the application
+        """
         choice = QMessageBox.question(self, 'Close application', "Quit the application?",
                                       QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
         if choice == QMessageBox.Yes:
@@ -62,43 +70,44 @@ class MainWindow(QMainWindow):
     #@Slot(str)
     def import_csv(self, button):
         """
-    Reads csv file from document explorer
+        Imports a csv file to a variable
+        :param button: name of QPushbutton object
         """
         filePath, _ = QFileDialog.getOpenFileName(self, 'Choose a file', '\Home', filter="csv(*.csv)")
         if filePath != "":
             data = pd.read_csv(str(filePath))
 
-        if button == "historicSales":
-            data['POSTING DATE'] = pd.to_datetime(data['POSTING DATE'].astype(str), format='%Y%m%d')
+            if button == "historicSales":
+                data['POSTING DATE'] = pd.to_datetime(data['POSTING DATE'].astype(str), format='%Y%m%d')
 
-            column_remove = ['BRANCH', 'CUSTNO', 'DIN', 'MATL', 'ITEM NO', 'WEIGHT',
-                             'USER NAME', 'TYPEOFSALE', 'SLM', 'INVOICE NUMBER', 'NAME', '.',
-                             'THREAD', 'PL', 'COSTVAL', 'SALES VALUE', 'OVERBY', 'DESCRIPT',
-                             'INDUSTRY CODE', 'CONTRIBUTION%', 'GLGROUP', 'TRNSPCODE',
-                             ' ']
-            data.drop(column_remove, axis=1, inplace=True)
-            data = data.groupby(['POSTING DATE', 'STOCKNO']).sum()
+                column_remove = ['BRANCH', 'CUSTNO', 'DIN', 'MATL', 'ITEM NO', 'WEIGHT',
+                                 'USER NAME', 'TYPEOFSALE', 'SLM', 'INVOICE NUMBER', 'NAME', '.',
+                                 'THREAD', 'PL', 'COSTVAL', 'SALES VALUE', 'OVERBY', 'DESCRIPT',
+                                 'INDUSTRY CODE', 'CONTRIBUTION%', 'GLGROUP', 'TRNSPCODE',
+                                 ' ']
+                data.drop(column_remove, axis=1, inplace=True)
+                data = data.groupby(['POSTING DATE', 'STOCKNO']).sum()
 
-            self.historicSales = data
+                self.historicSales = data
 
-        if button == "skuList":
-            data = data['STOCKNO'].tolist()
-            self.skuList = data
+            if button == "skuList":
+                data = data['STOCKNO'].tolist()
+                self.skuList = data
 
-        if button == "stockOnHand":
-            self.stockOnHand = data
+            if button == "stockOnHand":
+                self.stockOnHand = data
 
-        if button == "bomList":
-            self.bomList = data
+            if button == "bomList":
+                self.bomList = data
 
-        if button == "supplierOrigin":
-            self.supplierOrigin = data
+            if button == "supplierOrigin":
+                self.supplierOrigin = data
 
-        if button == "warehouseInfo":
-            self.warehouseInfo = data
+            if button == "warehouseInfo":
+                self.warehouseInfo = data
 
-        if button == "backlogData":
-            self.backlogData = data
+            if button == "backlogData":
+                self.backlogData = data
 
     def print_import(self):
         print(self.historicSales)
@@ -133,10 +142,6 @@ class MainWindow(QMainWindow):
         :param metric: string (mape, mse)
         """
         pass
-        if metric == 'mape':
-            return 0
-        if metric == 'mse':
-            return 1
 
     ##############################################################
     # Functions for order analysis

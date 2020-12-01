@@ -24,18 +24,19 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QLabel#title
-{
-background-color: rgba(0,0,0,0%)
-}
+       {
+       background-color: rgba(0,0,0,0%);
+       color: #ffffff;
+       }
 
-QWidget#homepage
-{ 
-	border-image: url(:/Images/Images for QT/Warehouse.jpg);
-}
+       QWidget#homepage
+       {
+       border-image: url(:/Images/Images for QT/Warehouse.jpg);
+       }
 
-QPushButton#startButton
-{
-	color: #eff0f1;
+       QPushButton#startButton
+       {
+       color: #eff0f1;
     background-color: #323232;
     border-width: 1px;
     border-color: #76797C;
@@ -1344,19 +1345,19 @@ QDateEdit::down-arrow:focus
     </sizepolicy>
    </property>
    <layout class="QGridLayout" name="gridLayout_3">
-    <item row="0" column="0">
-     <widget class="QStackedWidget" name="stack">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Sunken</enum>
-      </property>
+       <item row="1" column="0">
+           <widget class="QStackedWidget" name="stack">
+               <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                   </sizepolicy>
+               </property>
+               <property name="frameShadow">
+                   <enum>QFrame::Sunken</enum>
+               </property>
       <property name="currentIndex">
-       <number>2</number>
+          <number>5</number>
       </property>
       <widget class="QWidget" name="homepage">
        <layout class="QGridLayout" name="gridLayout_9">
@@ -1364,19 +1365,6 @@ QDateEdit::down-arrow:focus
          <layout class="QGridLayout" name="gridLayout_6">
           <item row="0" column="0">
            <layout class="QVBoxLayout" name="verticalLayout">
-            <item>
-             <spacer name="verticalSpacer_2">
-              <property name="orientation">
-               <enum>Qt::Vertical</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>40</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
             <item>
              <widget class="QLabel" name="title">
               <property name="font">
@@ -1387,55 +1375,21 @@ QDateEdit::down-arrow:focus
                 <bold>true</bold>
                </font>
               </property>
-              <property name="autoFillBackground">
-               <bool>false</bool>
-              </property>
-              <property name="text">
-               <string>Retail Inventory Management Framework</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
+                 <property name="autoFillBackground">
+                     <bool>false</bool>
+                 </property>
+                 <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Inventory Management
+                         &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Framework&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                     </string>
+                 </property>
+                 <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="wordWrap">
+                     <bool>true</bool>
+                 </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="verticalSpacer_11">
-              <property name="orientation">
-               <enum>Qt::Vertical</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>40</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
-             <spacer name="verticalSpacer_10">
-              <property name="orientation">
-               <enum>Qt::Vertical</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>40</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
-             <spacer name="verticalSpacer_9">
-              <property name="orientation">
-               <enum>Qt::Vertical</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>40</height>
-               </size>
-              </property>
-             </spacer>
             </item>
             <item>
              <spacer name="verticalSpacer_8">
@@ -1622,67 +1576,227 @@ QDateEdit::down-arrow:focus
        </layout>
       </widget>
       <widget class="QWidget" name="data_processing">
-       <layout class="QGridLayout" name="gridLayout_4">
-        <item row="2" column="1">
-         <widget class="QLabel" name="label_3">
-          <property name="text">
-           <string>Specify imputing method</string>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="2">
-         <widget class="QPushButton" name="import_csv_button_7">
-          <property name="cursor">
-           <cursorShape>PointingHandCursor</cursorShape>
-          </property>
-          <property name="text">
-           <string>Update sales data</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="1">
-         <widget class="QLabel" name="label_18">
-          <property name="font">
-           <font>
-            <family>Calisto MT</family>
-            <pointsize>20</pointsize>
-           </font>
-          </property>
-          <property name="text">
-           <string>Data Processing</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="1">
-         <widget class="QComboBox" name="imputingComboBox">
-          <item>
-           <property name="text">
-            <string>Delete</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Average</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Interpolate</string>
-           </property>
-          </item>
-         </widget>
-        </item>
-        <item row="2" column="0">
-         <layout class="QVBoxLayout" name="verticalLayout_3">
-          <item>
-           <widget class="QLabel" name="label_22">
-            <property name="text">
-             <string>Import SKU data</string>
-            </property>
-           </widget>
+          <layout class="QGridLayout" name="gridLayout_4">
+              <item row="4" column="1">
+                  <spacer name="verticalSpacer_12">
+                      <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeType">
+                          <enum>QSizePolicy::Preferred</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                          <size>
+                              <width>20</width>
+                              <height>60</height>
+                          </size>
+                      </property>
+                  </spacer>
+              </item>
+              <item row="6" column="1">
+                  <spacer name="verticalSpacer_10">
+                      <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeType">
+                          <enum>QSizePolicy::Preferred</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                          <size>
+                              <width>20</width>
+                              <height>60</height>
+                          </size>
+                      </property>
+                  </spacer>
+              </item>
+              <item row="0" column="2">
+                  <spacer name="horizontalSpacer_6">
+                      <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                          <size>
+                              <width>40</width>
+                              <height>20</height>
+                          </size>
+                      </property>
+                  </spacer>
+              </item>
+              <item row="0" column="1">
+                  <widget class="QLabel" name="processingLabel">
+                      <property name="maximumSize">
+                          <size>
+                              <width>16777215</width>
+                              <height>40</height>
+                          </size>
+                      </property>
+                      <property name="font">
+                          <font>
+                              <family>Calisto MT</family>
+                              <pointsize>20</pointsize>
+                          </font>
+                      </property>
+                      <property name="text">
+                          <string>Data Processing</string>
+                      </property>
+                      <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                      </property>
+                  </widget>
+              </item>
+              <item row="5" column="1">
+                  <layout class="QVBoxLayout" name="verticalLayout_2">
+                      <item>
+                          <layout class="QVBoxLayout" name="verticalLayout_4">
+                              <item>
+                                  <widget class="QLabel" name="label_2">
+                                      <property name="text">
+                                          <string>Update SKU data</string>
+                                      </property>
+                                      <property name="alignment">
+                                          <set>Qt::AlignCenter</set>
+                                      </property>
+                                  </widget>
+                              </item>
+                              <item>
+                                  <widget class="QPushButton" name="import_csv_button_7">
+                                      <property name="cursor">
+                                          <cursorShape>PointingHandCursor</cursorShape>
+                                      </property>
+                                      <property name="text">
+                                          <string>Update sales data</string>
+                                      </property>
+                                  </widget>
+                              </item>
+                          </layout>
+                      </item>
+                  </layout>
+              </item>
+              <item row="3" column="1">
+                  <layout class="QGridLayout" name="gridLayout_10">
+                      <item row="0" column="2">
+                          <widget class="QComboBox" name="imputingComboBox">
+                              <item>
+                                  <property name="text">
+                                      <string>Delete</string>
+                                  </property>
+                              </item>
+                              <item>
+                                  <property name="text">
+                                      <string>Average</string>
+                                  </property>
+                              </item>
+                              <item>
+                                  <property name="text">
+                                      <string>Interpolate</string>
+                                  </property>
+                              </item>
+                          </widget>
+                      </item>
+                      <item row="2" column="0">
+                          <widget class="QLabel" name="label_5">
+                              <property name="text">
+                                  <string>SKU prioritisation metric</string>
+                              </property>
+                          </widget>
+                      </item>
+                      <item row="2" column="2">
+                          <widget class="QComboBox" name="comboBox_2">
+                              <item>
+                                  <property name="text">
+                                      <string>Monetary value</string>
+                                  </property>
+                              </item>
+                              <item>
+                                  <property name="text">
+                                      <string>Sales volume</string>
+                                  </property>
+                              </item>
+                          </widget>
+                      </item>
+                      <item row="0" column="0">
+                          <widget class="QLabel" name="label_3">
+                              <property name="text">
+                                  <string>Imputing method</string>
+                              </property>
+                          </widget>
+                      </item>
+                      <item row="1" column="2">
+                          <spacer name="verticalSpacer_9">
+                              <property name="orientation">
+                                  <enum>Qt::Vertical</enum>
+                              </property>
+                              <property name="sizeType">
+                                  <enum>QSizePolicy::Preferred</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                                  <size>
+                                      <width>20</width>
+                                      <height>40</height>
+                                  </size>
+                              </property>
+                          </spacer>
+                      </item>
+                  </layout>
+              </item>
+              <item row="9" column="1">
+                  <layout class="QGridLayout" name="gridLayout_15">
+                      <item row="0" column="0">
+                          <spacer name="horizontalSpacer_23">
+                              <property name="orientation">
+                                  <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                                  <size>
+                                      <width>40</width>
+                                      <height>20</height>
+                                  </size>
+                              </property>
+                          </spacer>
+                      </item>
+                      <item row="0" column="1">
+                          <widget class="QProgressBar" name="data_processing_progressBar">
+                              <property name="value">
+                                  <number>0</number>
+                              </property>
+                          </widget>
+                      </item>
+                      <item row="1" column="1">
+                          <widget class="QPushButton" name="forecastingButton">
+                              <property name="cursor">
+                                  <cursorShape>PointingHandCursor</cursorShape>
+                              </property>
+                              <property name="text">
+                                  <string>Proceed to demand forecasting</string>
+                              </property>
+                          </widget>
+                      </item>
+                      <item row="0" column="2">
+                          <spacer name="horizontalSpacer_24">
+                              <property name="orientation">
+                                  <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                                  <size>
+                                      <width>40</width>
+                                      <height>20</height>
+                                  </size>
+                              </property>
+                          </spacer>
+                      </item>
+                  </layout>
+              </item>
+              <item row="2" column="1">
+                  <layout class="QVBoxLayout" name="verticalLayout_3">
+                      <item>
+                          <widget class="QLabel" name="label_22">
+                              <property name="text">
+                                  <string>Import SKU data</string>
+                              </property>
+                              <property name="alignment">
+                                  <set>Qt::AlignCenter</set>
+                              </property>
+                          </widget>
           </item>
           <item>
            <widget class="QPushButton" name="historicSalesButton">
@@ -1762,771 +1876,1079 @@ QDateEdit::down-arrow:focus
             <property name="sizeType">
              <enum>QSizePolicy::Preferred</enum>
             </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
+               <property name="sizeHint" stdset="0">
+                   <size>
+                       <width>20</width>
+                       <height>40</height>
+                   </size>
+               </property>
            </spacer>
           </item>
-         </layout>
-        </item>
-        <item row="2" column="2">
-         <widget class="QLabel" name="label_2">
-          <property name="text">
-           <string>Update SKU data</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="1">
-         <spacer name="verticalSpacer_12">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="0" column="0">
-         <spacer name="horizontalSpacer_5">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="6" column="1">
-         <widget class="QPushButton" name="forecastingButton">
-          <property name="cursor">
-           <cursorShape>PointingHandCursor</cursorShape>
-          </property>
-          <property name="text">
-           <string>Go to forecasting</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="2">
-         <spacer name="horizontalSpacer_6">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="3" column="0">
-         <widget class="QPushButton" name="testButton">
-          <property name="text">
-           <string>PRINT BUTTON</string>
-          </property>
-         </widget>
-        </item>
-        <item row="5" column="1">
-         <widget class="QProgressBar" name="data_processing_progressBar">
-          <property name="value">
-           <number>0</number>
-          </property>
-         </widget>
-        </item>
-       </layout>
+                  </layout>
+              </item>
+              <item row="0" column="0">
+                  <spacer name="horizontalSpacer_5">
+                      <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                          <size>
+                              <width>40</width>
+                              <height>20</height>
+                          </size>
+                      </property>
+                  </spacer>
+              </item>
+          </layout>
       </widget>
-      <widget class="QWidget" name="forecasting">
-          <layout class="QGridLayout" name="gridLayout">
-              <item row="8" column="0">
-                  <widget class="QComboBox" name="comboBox">
-                      <item>
-                          <property name="text">
-                              <string>Simple average</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>Stacking</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>Boosting</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>Bagging</string>
-                          </property>
-                      </item>
-                  </widget>
-              </item>
-              <item row="20" column="0">
-                  <widget class="QLabel" name="label_40">
-                      <property name="text">
-                          <string>Specify confidence interval?</string>
-                      </property>
-                      <property name="alignment">
-                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                      </property>
-                      <property name="wordWrap">
-                          <bool>true</bool>
-                      </property>
-                  </widget>
-              </item>
-              <item row="1" column="0">
-                  <spacer name="horizontalSpacer_7">
-                      <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                          <size>
-                              <width>40</width>
-                              <height>20</height>
-                          </size>
-                      </property>
-                  </spacer>
-              </item>
-              <item row="17" column="4">
-                  <widget class="QLabel" name="label_44">
-                      <property name="text">
-                          <string>Specify promotional information?</string>
-                      </property>
-                      <property name="alignment">
-                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                      </property>
-                      <property name="wordWrap">
-                          <bool>true</bool>
-                      </property>
-                  </widget>
-              </item>
-              <item row="15" column="0">
-                  <widget class="QCheckBox" name="checkBox_38">
-                      <property name="text">
-                          <string>Regression</string>
-                      </property>
-                  </widget>
-              </item>
-              <item row="19" column="0">
-                  <widget class="QLabel" name="label_41">
-                      <property name="text">
-                          <string>Specify evaluation criteria</string>
-                      </property>
-                      <property name="alignment">
-                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                      </property>
-                      <property name="wordWrap">
-                          <bool>true</bool>
-                      </property>
-                  </widget>
-        </item>
-              <item row="20" column="1">
-                  <widget class="QSpinBox" name="spinBox_6">
-                      <property name="wrapping">
-                          <bool>false</bool>
-                      </property>
-                      <property name="frame">
-                          <bool>true</bool>
-                      </property>
-                      <property name="readOnly">
-                          <bool>false</bool>
-                      </property>
-          <property name="minimum">
-           <number>80</number>
-          </property>
-         </widget>
-        </item>
-              <item row="19" column="1">
-                  <widget class="QComboBox" name="comboBox_6">
-                      <property name="editable">
-                          <bool>false</bool>
-                      </property>
-                      <property name="currentText">
-                          <string>OWA</string>
-                      </property>
-                      <item>
-                          <property name="text">
-                              <string>OWA</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Mean error</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Mean absolute deviation</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Mean squared error</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Mean percent forecast error</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Mean absolute percent forecast error</string>
-           </property>
-          </item>
-         </widget>
-        </item>
-              <item row="22" column="2">
-                  <widget class="QProgressBar" name="progressBar">
-                      <property name="value">
-                          <number>0</number>
-                      </property>
-                  </widget>
-              </item>
-        <item row="3" column="4">
-         <widget class="QLabel" name="label_42">
-          <property name="text">
-              <string>Performance summary</string>
-          </property>
-             <property name="alignment">
-                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-             </property>
-             <property name="wordWrap">
-                 <bool>true</bool>
-             </property>
-         </widget>
-        </item>
-              <item row="18" column="4" rowspan="4">
-                  <widget class="QGraphicsView" name="graphicsView_9"/>
-              </item>
-              <item row="10" column="0">
-                  <widget class="QCheckBox" name="checkBox_32">
-                      <property name="text">
-                          <string>Simple exponential smoothing</string>
-                      </property>
-                  </widget>
-              </item>
-              <item row="6" column="0" rowspan="2">
-                  <widget class="QLabel" name="label_39">
-                      <property name="text">
-                          <string>Use ensemble learning</string>
-                      </property>
-                      <property name="wordWrap">
-                          <bool>true</bool>
-                      </property>
-                  </widget>
-              </item>
-              <item row="3" column="0">
-         <widget class="QLabel" name="label_37">
-          <property name="text">
-           <string>Specify how many years of data to use</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="1">
-            <widget class="QSpinBox" name="historicUsageSpinBox">
-                <property name="minimum">
-                    <number>1</number>
-                </property>
-                <property name="maximum">
-                    <number>10</number>
-                </property>
-                <property name="value">
-                    <number>2</number>
-                </property>
-            </widget>
-        </item>
-              <item row="6" column="1">
-                  <widget class="QRadioButton" name="radioButton_18">
-                      <property name="text">
-                          <string>Yes</string>
-                      </property>
-                  </widget>
-              </item>
-              <item row="12" column="0">
-                  <widget class="QCheckBox" name="checkBox_39">
-                      <property name="text">
-                          <string>ARIMA</string>
-                      </property>
-                  </widget>
-              </item>
-              <item row="7" column="1">
-                  <widget class="QRadioButton" name="radioButton_17">
-                      <property name="text">
-                          <string>No</string>
-                      </property>
-                  </widget>
-              </item>
-              <item row="7" column="4" rowspan="5">
-                  <widget class="QGraphicsView" name="graphicsView_7"/>
-              </item>
-              <item row="12" column="4">
-                  <widget class="QLabel" name="label_43">
-                      <property name="text">
-                          <string>Adjust suggested ensemble</string>
-                      </property>
-                      <property name="alignment">
-                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                      </property>
-                      <property name="wordWrap">
-                          <bool>true</bool>
-                      </property>
-                  </widget>
-              </item>
-              <item row="11" column="0">
-                  <widget class="QCheckBox" name="checkBox_36">
-                      <property name="text">
-                          <string>Holt-Winters</string>
-                      </property>
-                  </widget>
-              </item>
-              <item row="1" column="3">
-                  <spacer name="horizontalSpacer_10">
-                      <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                          <size>
-                              <width>40</width>
-                              <height>20</height>
-                          </size>
-                      </property>
-                  </spacer>
-              </item>
-              <item row="13" column="4" rowspan="4">
-                  <widget class="QGraphicsView" name="graphicsView_8"/>
-              </item>
-              <item row="2" column="2">
-                  <spacer name="verticalSpacer_14">
-                      <property name="orientation">
-                          <enum>Qt::Vertical</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                          <size>
-                              <width>20</width>
-                              <height>40</height>
-                          </size>
-                      </property>
-                  </spacer>
-              </item>
-              <item row="14" column="0">
-                  <widget class="QCheckBox" name="checkBox_31">
-                      <property name="text">
-                          <string>Moving average</string>
-                      </property>
-                  </widget>
-              </item>
-              <item row="1" column="1">
-                  <spacer name="horizontalSpacer_9">
-                      <property name="orientation">
-                          <enum>Qt::Horizontal</enum>
-                      </property>
-                      <property name="sizeHint" stdset="0">
-                          <size>
-                              <width>40</width>
-                              <height>20</height>
-                          </size>
-                      </property>
-                  </spacer>
-        </item>
-              <item row="23" column="2">
-                  <widget class="QPushButton" name="orderanalysisButton">
-                      <property name="cursor">
-                          <cursorShape>PointingHandCursor</cursorShape>
-                      </property>
-                      <property name="text">
-                          <string>Go to order analysis</string>
-                      </property>
-                  </widget>
-              </item>
-        <item row="1" column="4">
-         <spacer name="horizontalSpacer_8">
-          <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-          </property>
-             <property name="sizeHint" stdset="0">
-                 <size>
-                     <width>40</width>
-                     <height>20</height>
-                 </size>
-             </property>
-         </spacer>
-        </item>
-              <item row="1" column="2">
-                  <widget class="QLabel" name="label_19">
-                      <property name="font">
-                          <font>
-                              <family>Calisto MT</family>
-                              <pointsize>20</pointsize>
-                          </font>
-                      </property>
-                      <property name="text">
-                          <string>Forecasting</string>
-                      </property>
-                      <property name="alignment">
-                          <set>Qt::AlignCenter</set>
-                      </property>
-                  </widget>
-              </item>
-              <item row="13" column="0">
-                  <widget class="QCheckBox" name="checkBox_40">
-                      <property name="text">
-                          <string>SARIMA</string>
-                      </property>
-                  </widget>
-              </item>
-              <item row="9" column="0">
-                  <widget class="QLabel" name="label_38">
-                      <property name="text">
-                          <string>Select forecasting method class(es) to employ</string>
-                      </property>
-                      <property name="alignment">
-                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                      </property>
-                      <property name="wordWrap">
-                          <bool>true</bool>
-                      </property>
-                  </widget>
-              </item>
-              <item row="4" column="0">
-                  <widget class="QLabel" name="label">
-                      <property name="text">
-                          <string>Specify forecast period type</string>
-                      </property>
-                  </widget>
-              </item>
-              <item row="5" column="0">
-                  <widget class="QLabel" name="label_4">
-                      <property name="text">
-                          <string>Specify forecast period length</string>
-                      </property>
-                  </widget>
-              </item>
-              <item row="5" column="1">
-                  <widget class="QSpinBox" name="forecastPeriodSpinBox"/>
-              </item>
-              <item row="4" column="1">
-                  <widget class="QComboBox" name="periodTypeComboBox">
-                      <item>
-                          <property name="text">
-                              <string>Monthly</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>Weekly</string>
-                          </property>
-                      </item>
-                      <item>
-                          <property name="text">
-                              <string>Daily</string>
-                          </property>
-                      </item>
-                  </widget>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="order_analysis">
-       <layout class="QGridLayout" name="gridLayout_2">
-        <item row="5" column="3" colspan="2">
-         <widget class="QRadioButton" name="radioButton_9">
-          <property name="text">
-           <string>RadioButton</string>
-          </property>
-         </widget>
-        </item>
-        <item row="4" column="0" colspan="3">
-         <widget class="QLabel" name="label_25">
-          <property name="text">
-           <string>Specify KPIs</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="0" rowspan="2">
-         <widget class="QLabel" name="label_24">
-          <property name="text">
-           <string>Specify inventory policy</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="6" column="0" colspan="3">
-         <widget class="QCheckBox" name="checkBox_18">
-          <property name="text">
-           <string>Minimise SOH (items)</string>
-          </property>
-         </widget>
-        </item>
-        <item row="4" column="3">
-         <widget class="QLabel" name="label_27">
-          <property name="text">
-           <string>Specify bin-packing algorithm to use</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="3">
-         <widget class="QLabel" name="label_26">
-          <property name="text">
-           <string>Specify timeframe?</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="5" column="0">
-         <widget class="QCheckBox" name="checkBox_19">
-          <property name="text">
-           <string>Maximise profit</string>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="4">
-         <widget class="QComboBox" name="comboBox_4">
-          <item>
-           <property name="text">
-            <string>Daily</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Weekly</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Monthly</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Bi-monthly</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Quarterly</string>
-           </property>
-          </item>
-         </widget>
-        </item>
-        <item row="11" column="0" colspan="3">
-         <widget class="QPushButton" name="pushButton_6">
-          <property name="text">
-           <string>Fit inventory models</string>
-          </property>
-         </widget>
-        </item>
-        <item row="8" column="3" colspan="2">
-         <widget class="QRadioButton" name="radioButton_12">
-          <property name="text">
-           <string>RadioButton</string>
-          </property>
-         </widget>
-        </item>
-        <item row="7" column="3" colspan="2">
-         <widget class="QRadioButton" name="radioButton_14">
-          <property name="text">
-           <string>RadioButton</string>
-          </property>
-         </widget>
-        </item>
-        <item row="6" column="3" colspan="2">
-         <widget class="QRadioButton" name="radioButton_13">
-          <property name="text">
-           <string>RadioButton</string>
-          </property>
-         </widget>
-        </item>
-        <item row="12" column="3" colspan="2">
-         <widget class="QProgressBar" name="progressBar_5">
-          <property name="value">
-           <number>0</number>
-          </property>
-         </widget>
-        </item>
-        <item row="11" column="3" colspan="2">
-         <widget class="QPushButton" name="pushButton_5">
-          <property name="text">
-           <string>Optimise order quantities</string>
-          </property>
-         </widget>
-        </item>
-        <item row="13" column="0" colspan="3">
-         <widget class="QLabel" name="label_23">
-          <property name="text">
-           <string>Inventory models and parameters</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="3">
-         <spacer name="horizontalSpacer_12">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="0" column="0">
-         <spacer name="horizontalSpacer_11">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="12" column="0" colspan="3">
-         <widget class="QProgressBar" name="progressBar_4">
-          <property name="value">
-           <number>0</number>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="4">
-         <spacer name="horizontalSpacer_13">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="0" column="2">
-         <widget class="QLabel" name="label_20">
-          <property name="font">
-           <font>
-            <family>Calisto MT</family>
-            <pointsize>20</pointsize>
-           </font>
-          </property>
-          <property name="text">
-           <string>Order analysis</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="1">
-         <spacer name="horizontalSpacer_14">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="1" column="1">
-         <widget class="QRadioButton" name="radioButton_11">
-          <property name="text">
-           <string>Periodic</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="1">
-         <widget class="QRadioButton" name="radioButton_10">
-          <property name="text">
-           <string>Continuous</string>
-          </property>
-         </widget>
-        </item>
-        <item row="9" column="0">
-         <widget class="QCheckBox" name="checkBox_17">
-          <property name="text">
-           <string>Maximise customer satisfaction</string>
-          </property>
-         </widget>
-        </item>
-        <item row="7" column="0" rowspan="2">
-         <widget class="QCheckBox" name="checkBox_16">
-          <property name="text">
-           <string>Minimise cost</string>
-          </property>
-         </widget>
-        </item>
-        <item row="14" column="2">
-         <widget class="QPushButton" name="orderlistButton">
-          <property name="cursor">
-           <cursorShape>PointingHandCursor</cursorShape>
-          </property>
-          <property name="text">
-           <string>Go to order list</string>
-          </property>
-         </widget>
-        </item>
-        <item row="10" column="0">
-         <widget class="QCheckBox" name="checkBox_20">
-          <property name="text">
-           <string>Minimise SOH (value)</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
+               <widget class="QWidget" name="forecasting">
+                   <layout class="QGridLayout" name="gridLayout">
+                       <item row="6" column="2">
+                           <spacer name="verticalSpacer_16">
+                               <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                               </property>
+                               <property name="sizeHint" stdset="0">
+                                   <size>
+                                       <width>20</width>
+                                       <height>40</height>
+                                   </size>
+                               </property>
+                           </spacer>
+                       </item>
+                       <item row="2" column="2">
+                           <widget class="QLabel" name="label_19">
+                               <property name="maximumSize">
+                                   <size>
+                                       <width>16777215</width>
+                                       <height>40</height>
+                                   </size>
+                               </property>
+                               <property name="font">
+                                   <font>
+                                       <family>Calisto MT</family>
+                                       <pointsize>20</pointsize>
+                                   </font>
+                               </property>
+                               <property name="text">
+                                   <string>Forecasting</string>
+                               </property>
+                               <property name="alignment">
+                                   <set>Qt::AlignCenter</set>
+                               </property>
+                           </widget>
+                       </item>
+                       <item row="2" column="1">
+                           <spacer name="horizontalSpacer_7">
+                               <property name="orientation">
+                                   <enum>Qt::Horizontal</enum>
+                               </property>
+                               <property name="sizeHint" stdset="0">
+                                   <size>
+                                       <width>40</width>
+                                       <height>20</height>
+                                   </size>
+                               </property>
+                           </spacer>
+                       </item>
+                       <item row="2" column="3">
+                           <spacer name="horizontalSpacer_8">
+                               <property name="orientation">
+                                   <enum>Qt::Horizontal</enum>
+                               </property>
+                               <property name="sizeHint" stdset="0">
+                                   <size>
+                                       <width>40</width>
+                                       <height>20</height>
+                                   </size>
+                               </property>
+                           </spacer>
+                       </item>
+                       <item row="3" column="2">
+                           <spacer name="verticalSpacer_14">
+                               <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                               </property>
+                               <property name="sizeType">
+                                   <enum>QSizePolicy::Expanding</enum>
+                               </property>
+                               <property name="sizeHint" stdset="0">
+                                   <size>
+                                       <width>20</width>
+                                       <height>60</height>
+                                   </size>
+                               </property>
+                           </spacer>
+                       </item>
+                       <item row="5" column="2">
+                           <layout class="QGridLayout" name="gridLayout_11">
+                               <item row="6" column="0">
+                                   <widget class="QLabel" name="label_41">
+                                       <property name="text">
+                                           <string>Specify evaluation criteria</string>
+                                       </property>
+                                       <property name="alignment">
+                                           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                       </property>
+                                       <property name="wordWrap">
+                                           <bool>true</bool>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="6" column="1">
+                                   <widget class="QComboBox" name="comboBox_6">
+                                       <property name="editable">
+                                           <bool>false</bool>
+                                       </property>
+                                       <property name="currentText">
+                                           <string>OWA</string>
+                                       </property>
+                                       <item>
+                                           <property name="text">
+                                               <string>OWA</string>
+                                           </property>
+                                       </item>
+                                       <item>
+                                           <property name="text">
+                                               <string>Mean error</string>
+                                           </property>
+                                       </item>
+                                       <item>
+                                           <property name="text">
+                                               <string>Mean absolute deviation</string>
+                                           </property>
+                                       </item>
+                                       <item>
+                                           <property name="text">
+                                               <string>Mean squared error</string>
+                                           </property>
+                                       </item>
+                                       <item>
+                                           <property name="text">
+                                               <string>Mean percent forecast error</string>
+                                           </property>
+                                       </item>
+                                       <item>
+                                           <property name="text">
+                                               <string>Mean absolute percent forecast error</string>
+                                           </property>
+                                       </item>
+                                   </widget>
+                               </item>
+                               <item row="7" column="0">
+                                   <widget class="QLabel" name="label_40">
+                                       <property name="text">
+                                           <string>Specify confidence interval?</string>
+                                       </property>
+                                       <property name="alignment">
+                                           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                       </property>
+                                       <property name="wordWrap">
+                                           <bool>true</bool>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="7" column="1">
+                                   <widget class="QSpinBox" name="spinBox_6">
+                                       <property name="wrapping">
+                                           <bool>false</bool>
+                                       </property>
+                                       <property name="frame">
+                                           <bool>true</bool>
+                                       </property>
+                                       <property name="readOnly">
+                                           <bool>false</bool>
+                                       </property>
+                                       <property name="minimum">
+                                           <number>80</number>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="5" column="0">
+                                   <layout class="QVBoxLayout" name="verticalLayout_5">
+                                       <item>
+                                           <widget class="QLabel" name="label_38">
+                                               <property name="text">
+                                                   <string>Select forecasting method class(es) to employ</string>
+                                               </property>
+                                               <property name="alignment">
+                                                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                                               </property>
+                                               <property name="wordWrap">
+                                                   <bool>true</bool>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                       <item>
+                                           <widget class="QCheckBox" name="checkBox_32">
+                                               <property name="text">
+                                                   <string>Simple exponential smoothing</string>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                       <item>
+                                           <widget class="QCheckBox" name="checkBox_36">
+                                               <property name="text">
+                                                   <string>Holt-Winters</string>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                       <item>
+                                           <widget class="QCheckBox" name="checkBox_39">
+                                               <property name="text">
+                                                   <string>ARIMA</string>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                       <item>
+                                           <widget class="QCheckBox" name="checkBox_40">
+                                               <property name="text">
+                                                   <string>SARIMA</string>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                       <item>
+                                           <widget class="QCheckBox" name="checkBox_31">
+                                               <property name="text">
+                                                   <string>Moving average</string>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                       <item>
+                                           <widget class="QCheckBox" name="checkBox_38">
+                                               <property name="text">
+                                                   <string>Regression</string>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                   </layout>
+                               </item>
+                               <item row="2" column="0">
+                                   <widget class="QLabel" name="label_4">
+                                       <property name="text">
+                                           <string>Specify forecast period length</string>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="2" column="1">
+                                   <widget class="QSpinBox" name="forecastPeriodSpinBox"/>
+                               </item>
+                               <item row="1" column="1">
+                                   <widget class="QComboBox" name="periodTypeComboBox">
+                                       <item>
+                                           <property name="text">
+                                               <string>Monthly</string>
+                                           </property>
+                                       </item>
+                                       <item>
+                                           <property name="text">
+                                               <string>Weekly</string>
+                                           </property>
+                                       </item>
+                                       <item>
+                                           <property name="text">
+                                               <string>Daily</string>
+                                           </property>
+                                       </item>
+                                   </widget>
+                               </item>
+                               <item row="4" column="1">
+                                   <widget class="QComboBox" name="comboBox">
+                                       <item>
+                                           <property name="text">
+                                               <string>Simple average</string>
+                                           </property>
+                                       </item>
+                                       <item>
+                                           <property name="text">
+                                               <string>Stacking</string>
+                                           </property>
+                                       </item>
+                                       <item>
+                                           <property name="text">
+                                               <string>Boosting</string>
+                                           </property>
+                                       </item>
+                                       <item>
+                                           <property name="text">
+                                               <string>Bagging</string>
+                                           </property>
+                                       </item>
+                                   </widget>
+                               </item>
+                               <item row="3" column="0">
+                                   <widget class="QLabel" name="label_39">
+                                       <property name="text">
+                                           <string>Use ensemble learning</string>
+                                       </property>
+                                       <property name="wordWrap">
+                                           <bool>true</bool>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="0" column="1">
+                                   <widget class="QSpinBox" name="historicUsageSpinBox">
+                                       <property name="minimum">
+                                           <number>1</number>
+                                       </property>
+                                       <property name="maximum">
+                                           <number>10</number>
+                                       </property>
+                                       <property name="value">
+                                           <number>2</number>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="3" column="1">
+                                   <widget class="QComboBox" name="comboBox_3">
+                                       <item>
+                                           <property name="text">
+                                               <string>Yes</string>
+                                           </property>
+                                       </item>
+                                       <item>
+                                           <property name="text">
+                                               <string>No</string>
+                                           </property>
+                                       </item>
+                                   </widget>
+                               </item>
+                               <item row="0" column="0">
+                                   <widget class="QLabel" name="label_37">
+                                       <property name="text">
+                                           <string>Specify how many years of data to use</string>
+                                       </property>
+                                       <property name="wordWrap">
+                                           <bool>true</bool>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="4" column="0">
+                                   <widget class="QLabel" name="label_6">
+                                       <property name="text">
+                                           <string>Ensembling method</string>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="1" column="0">
+                                   <widget class="QLabel" name="label">
+                                       <property name="text">
+                                           <string>Specify forecast period type</string>
+                                       </property>
+                                   </widget>
+                               </item>
+                           </layout>
+                       </item>
+                       <item row="7" column="2">
+                           <layout class="QGridLayout" name="gridLayout_16">
+                               <item row="0" column="0">
+                                   <spacer name="horizontalSpacer_25">
+                                       <property name="orientation">
+                                           <enum>Qt::Horizontal</enum>
+                                       </property>
+                                       <property name="sizeHint" stdset="0">
+                                           <size>
+                                               <width>40</width>
+                                               <height>20</height>
+                                           </size>
+                                       </property>
+                                   </spacer>
+                               </item>
+                               <item row="1" column="1">
+                                   <widget class="QPushButton" name="orderanalysisButton">
+                                       <property name="cursor">
+                                           <cursorShape>PointingHandCursor</cursorShape>
+                                       </property>
+                                       <property name="text">
+                                           <string>Perform demand forecast</string>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="0" column="1">
+                                   <widget class="QProgressBar" name="progressBar">
+                                       <property name="value">
+                                           <number>0</number>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="0" column="2">
+                                   <spacer name="horizontalSpacer_26">
+                                       <property name="orientation">
+                                           <enum>Qt::Horizontal</enum>
+                                       </property>
+                                       <property name="sizeHint" stdset="0">
+                                           <size>
+                                               <width>40</width>
+                                               <height>20</height>
+                                           </size>
+                                       </property>
+                                   </spacer>
+                               </item>
+                           </layout>
+                       </item>
+                   </layout>
+               </widget>
+               <widget class="QWidget" name="page">
+                   <layout class="QGridLayout" name="gridLayout_12">
+                       <item row="2" column="1">
+                           <widget class="QLabel" name="label_8">
+                               <property name="text">
+                                   <string/>
+                               </property>
+                           </widget>
+                       </item>
+                       <item row="3" column="1">
+                           <layout class="QGridLayout" name="gridLayout_13">
+                               <item row="4" column="0">
+                                   <widget class="QCheckBox" name="checkBox_4">
+                                       <property name="text">
+                                           <string>Theta</string>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="3" column="0">
+                                   <widget class="QCheckBox" name="checkBox_3">
+                                       <property name="text">
+                                           <string>Naive S</string>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="1" column="0">
+                                   <widget class="QCheckBox" name="checkBox">
+                                       <property name="text">
+                                           <string>ARIMA</string>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="2" column="0">
+                                   <widget class="QCheckBox" name="checkBox_2">
+                                       <property name="text">
+                                           <string>Naive</string>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="0" column="1">
+                                   <widget class="QLabel" name="label_10">
+                                       <property name="text">
+                                           <string>Specify promotional information</string>
+                                       </property>
+                                       <property name="alignment">
+                                           <set>Qt::AlignCenter</set>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="0" column="0">
+                                   <widget class="QLabel" name="label_9">
+                                       <property name="maximumSize">
+                                           <size>
+                                               <width>16777215</width>
+                                               <height>30</height>
+                                           </size>
+                                       </property>
+                                       <property name="text">
+                                           <string>Adjust ensemble</string>
+                                       </property>
+                                       <property name="alignment">
+                                           <set>Qt::AlignCenter</set>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="1" column="1">
+                                   <layout class="QHBoxLayout" name="horizontalLayout_4">
+                                       <item>
+                                           <widget class="QLabel" name="label_12">
+                                               <property name="text">
+                                                   <string>SKU</string>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                       <item>
+                                           <widget class="QLabel" name="label_11">
+                                               <property name="text">
+                                                   <string>Percentage increase (%)</string>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                   </layout>
+                               </item>
+                               <item row="2" column="1">
+                                   <layout class="QHBoxLayout" name="horizontalLayout_5">
+                                       <item>
+                                           <widget class="QComboBox" name="comboBox_5">
+                                               <item>
+                                                   <property name="text">
+                                                       <string>4672</string>
+                                                   </property>
+                                               </item>
+                                               <item>
+                                                   <property name="text">
+                                                       <string>3589</string>
+                                                   </property>
+                                               </item>
+                                           </widget>
+                                       </item>
+                                       <item>
+                                           <widget class="QSpinBox" name="spinBox">
+                                               <property name="value">
+                                                   <number>5</number>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                   </layout>
+                               </item>
+                           </layout>
+                       </item>
+                       <item row="0" column="0">
+                           <spacer name="horizontalSpacer_9">
+                               <property name="orientation">
+                                   <enum>Qt::Horizontal</enum>
+                               </property>
+                               <property name="sizeType">
+                                   <enum>QSizePolicy::Fixed</enum>
+                               </property>
+                               <property name="sizeHint" stdset="0">
+                                   <size>
+                                       <width>150</width>
+                                       <height>20</height>
+                                   </size>
+                               </property>
+                           </spacer>
+                       </item>
+                       <item row="0" column="1">
+                           <widget class="QLabel" name="label_28">
+                               <property name="maximumSize">
+                                   <size>
+                                       <width>16777215</width>
+                                       <height>40</height>
+                                   </size>
+                               </property>
+                               <property name="font">
+                                   <font>
+                                       <family>Calisto MT</family>
+                                       <pointsize>20</pointsize>
+                                   </font>
+                               </property>
+                               <property name="text">
+                                   <string>Forecasting performance</string>
+                               </property>
+                               <property name="alignment">
+                                   <set>Qt::AlignCenter</set>
+                               </property>
+                           </widget>
+                       </item>
+                       <item row="0" column="2">
+                           <spacer name="horizontalSpacer_10">
+                               <property name="orientation">
+                                   <enum>Qt::Horizontal</enum>
+                               </property>
+                               <property name="sizeType">
+                                   <enum>QSizePolicy::Fixed</enum>
+                               </property>
+                               <property name="sizeHint" stdset="0">
+                                   <size>
+                                       <width>150</width>
+                                       <height>20</height>
+                                   </size>
+                               </property>
+                           </spacer>
+                       </item>
+                       <item row="1" column="1">
+                           <widget class="QLabel" name="label_7">
+                               <property name="sizePolicy">
+                                   <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                                       <horstretch>0</horstretch>
+                                       <verstretch>0</verstretch>
+                                   </sizepolicy>
+                               </property>
+                               <property name="maximumSize">
+                                   <size>
+                                       <width>16777215</width>
+                                       <height>30</height>
+                                   </size>
+                               </property>
+                               <property name="text">
+                                   <string>Performance summary</string>
+                               </property>
+                               <property name="alignment">
+                                   <set>Qt::AlignCenter</set>
+                               </property>
+                           </widget>
+                       </item>
+                       <item row="4" column="1">
+                           <layout class="QGridLayout" name="gridLayout_14">
+                               <item row="1" column="0">
+                                   <spacer name="horizontalSpacer_21">
+                                       <property name="orientation">
+                                           <enum>Qt::Horizontal</enum>
+                                       </property>
+                                       <property name="sizeHint" stdset="0">
+                                           <size>
+                                               <width>40</width>
+                                               <height>20</height>
+                                           </size>
+                                       </property>
+                                   </spacer>
+                               </item>
+                               <item row="2" column="1">
+                                   <widget class="QPushButton" name="finaliseForecastpushButton">
+                                       <property name="cursor">
+                                           <cursorShape>PointingHandCursor</cursorShape>
+                                       </property>
+                                       <property name="text">
+                                           <string>Finalise demand forecast</string>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="1" column="1">
+                                   <widget class="QProgressBar" name="progressBar_2">
+                                       <property name="value">
+                                           <number>0</number>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item row="1" column="2">
+                                   <spacer name="horizontalSpacer_22">
+                                       <property name="orientation">
+                                           <enum>Qt::Horizontal</enum>
+                                       </property>
+                                       <property name="sizeHint" stdset="0">
+                                           <size>
+                                               <width>40</width>
+                                               <height>20</height>
+                                           </size>
+                                       </property>
+                                   </spacer>
+                               </item>
+                               <item row="0" column="1">
+                                   <spacer name="verticalSpacer_2">
+                                       <property name="orientation">
+                                           <enum>Qt::Vertical</enum>
+                                       </property>
+                                       <property name="sizeType">
+                                           <enum>QSizePolicy::Fixed</enum>
+                                       </property>
+                                       <property name="sizeHint" stdset="0">
+                                           <size>
+                                               <width>20</width>
+                                               <height>40</height>
+                                           </size>
+                                       </property>
+                                   </spacer>
+                               </item>
+                           </layout>
+                       </item>
+                   </layout>
+               </widget>
+               <widget class="QWidget" name="order_analysis">
+                   <layout class="QGridLayout" name="gridLayout_2">
+                       <item row="1" column="0">
+                           <layout class="QGridLayout" name="gridLayout_18">
+                               <item row="0" column="0">
+                                   <layout class="QVBoxLayout" name="verticalLayout_8">
+                                       <item>
+                                           <layout class="QHBoxLayout" name="horizontalLayout_6">
+                                               <item>
+                                                   <widget class="QLabel" name="label_24">
+                                                       <property name="maximumSize">
+                                                           <size>
+                                                               <width>16777215</width>
+                                                               <height>30</height>
+                                                           </size>
+                                                       </property>
+                                                       <property name="text">
+                                                           <string>Specify inventory policy</string>
+                                                       </property>
+                                                       <property name="wordWrap">
+                                                           <bool>true</bool>
+                                                       </property>
+                                                   </widget>
+                                               </item>
+                                               <item>
+                                                   <widget class="QComboBox" name="comboBox_7">
+                                                       <item>
+                                                           <property name="text">
+                                                               <string>Continuous</string>
+                                                           </property>
+                                                       </item>
+                                                       <item>
+                                                           <property name="text">
+                                                               <string>Periodic</string>
+                                                           </property>
+                                                       </item>
+                                                   </widget>
+                                               </item>
+                                           </layout>
+                                       </item>
+                                       <item>
+                                           <layout class="QGridLayout" name="gridLayout_17">
+                                               <item row="2" column="0">
+                                                   <layout class="QVBoxLayout" name="verticalLayout_6">
+                                                       <item>
+                                                           <widget class="QLabel" name="label_25">
+                                                               <property name="maximumSize">
+                                                                   <size>
+                                                                       <width>16777215</width>
+                                                                       <height>30</height>
+                                                                   </size>
+                                                               </property>
+                                                               <property name="text">
+                                                                   <string>Specify KPIs</string>
+                                                               </property>
+                                                               <property name="alignment">
+                                                                   <set>Qt::AlignCenter</set>
+                                                               </property>
+                                                               <property name="wordWrap">
+                                                                   <bool>true</bool>
+                                                               </property>
+                                                           </widget>
+                                                       </item>
+                                                       <item>
+                                                           <widget class="QCheckBox" name="checkBox_19">
+                                                               <property name="text">
+                                                                   <string>Maximise profit</string>
+                                                               </property>
+                                                           </widget>
+                                                       </item>
+                                                       <item>
+                                                           <widget class="QCheckBox" name="checkBox_18">
+                                                               <property name="text">
+                                                                   <string>Minimise SOH (items)</string>
+                                                               </property>
+                                                           </widget>
+                                                       </item>
+                                                       <item>
+                                                           <widget class="QCheckBox" name="checkBox_16">
+                                                               <property name="text">
+                                                                   <string>Minimise cost</string>
+                                                               </property>
+                                                           </widget>
+                                                       </item>
+                                                       <item>
+                                                           <widget class="QCheckBox" name="checkBox_17">
+                                                               <property name="text">
+                                                                   <string>Maximise customer satisfaction</string>
+                                                               </property>
+                                                           </widget>
+                                                       </item>
+                                                       <item>
+                                                           <widget class="QCheckBox" name="checkBox_20">
+                                                               <property name="text">
+                                                                   <string>Minimise SOH (value)</string>
+                                                               </property>
+                                                           </widget>
+                                                       </item>
+                                                   </layout>
+                                               </item>
+                                               <item row="1" column="0">
+                                                   <layout class="QHBoxLayout" name="horizontalLayout_7">
+                                                       <item>
+                                                           <widget class="QLabel" name="label_26">
+                                                               <property name="maximumSize">
+                                                                   <size>
+                                                                       <width>16777215</width>
+                                                                       <height>30</height>
+                                                                   </size>
+                                                               </property>
+                                                               <property name="text">
+                                                                   <string>Specify timeframe?</string>
+                                                               </property>
+                                                               <property name="alignment">
+                                                                   <set>
+                                                                       Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter
+                                                                   </set>
+                                                               </property>
+                                                               <property name="wordWrap">
+                                                                   <bool>true</bool>
+                                                               </property>
+                                                           </widget>
+                                                       </item>
+                                                       <item>
+                                                           <widget class="QComboBox" name="comboBox_4">
+                                                               <item>
+                                                                   <property name="text">
+                                                                       <string>Daily</string>
+                                                                   </property>
+                                                               </item>
+                                                               <item>
+                                                                   <property name="text">
+                                                                       <string>Weekly</string>
+                                                                   </property>
+                                                               </item>
+                                                               <item>
+                                                                   <property name="text">
+                                                                       <string>Monthly</string>
+                                                                   </property>
+                                                               </item>
+                                                               <item>
+                                                                   <property name="text">
+                                                                       <string>Bi-monthly</string>
+                                                                   </property>
+                                                               </item>
+                                                               <item>
+                                                                   <property name="text">
+                                                                       <string>Quarterly</string>
+                                                                   </property>
+                                                               </item>
+                                                           </widget>
+                                                       </item>
+                                                   </layout>
+                                               </item>
+                                           </layout>
+                                       </item>
+                                       <item>
+                                           <widget class="QPushButton" name="pushButton_6">
+                                               <property name="text">
+                                                   <string>Fit inventory models</string>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                       <item>
+                                           <widget class="QProgressBar" name="progressBar_4">
+                                               <property name="value">
+                                                   <number>0</number>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                   </layout>
+                               </item>
+                               <item row="0" column="1">
+                                   <layout class="QVBoxLayout" name="verticalLayout_9">
+                                       <item>
+                                           <widget class="QLabel" name="label_23">
+                                               <property name="maximumSize">
+                                                   <size>
+                                                       <width>16777215</width>
+                                                       <height>30</height>
+                                                   </size>
+                                               </property>
+                                               <property name="text">
+                                                   <string>Inventory models and parameters</string>
+                                               </property>
+                                               <property name="alignment">
+                                                   <set>Qt::AlignCenter</set>
+                                               </property>
+                                               <property name="wordWrap">
+                                                   <bool>true</bool>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                       <item>
+                                           <widget class="QLabel" name="label_13">
+                                               <property name="minimumSize">
+                                                   <size>
+                                                       <width>500</width>
+                                                       <height>0</height>
+                                                   </size>
+                                               </property>
+                                               <property name="text">
+                                                   <string/>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                   </layout>
+                               </item>
+                           </layout>
+                       </item>
+                       <item row="19" column="0">
+                           <layout class="QHBoxLayout" name="horizontalLayout_9">
+                               <item>
+                                   <spacer name="horizontalSpacer_13">
+                                       <property name="orientation">
+                                           <enum>Qt::Horizontal</enum>
+                                       </property>
+                                       <property name="sizeHint" stdset="0">
+                                           <size>
+                                               <width>40</width>
+                                               <height>20</height>
+                                           </size>
+                                       </property>
+                                   </spacer>
+                               </item>
+                               <item>
+                                   <widget class="QPushButton" name="orderlistButton">
+                                       <property name="cursor">
+                                           <cursorShape>PointingHandCursor</cursorShape>
+                                       </property>
+                                       <property name="text">
+                                           <string>Proceed to order list</string>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item>
+                                   <spacer name="horizontalSpacer_14">
+                                       <property name="orientation">
+                                           <enum>Qt::Horizontal</enum>
+                                       </property>
+                                       <property name="sizeHint" stdset="0">
+                                           <size>
+                                               <width>40</width>
+                                               <height>20</height>
+                                           </size>
+                                       </property>
+                                   </spacer>
+                               </item>
+                           </layout>
+                       </item>
+                       <item row="2" column="0">
+                           <layout class="QHBoxLayout" name="horizontalLayout_10">
+                               <item>
+                                   <spacer name="horizontalSpacer_27">
+                                       <property name="orientation">
+                                           <enum>Qt::Horizontal</enum>
+                                       </property>
+                                       <property name="sizeHint" stdset="0">
+                                           <size>
+                                               <width>40</width>
+                                               <height>20</height>
+                                           </size>
+                                       </property>
+                                   </spacer>
+                               </item>
+                               <item>
+                                   <layout class="QVBoxLayout" name="verticalLayout_7">
+                                       <item>
+                                           <widget class="QLabel" name="label_27">
+                                               <property name="text">
+                                                   <string>Specify bin-packing algorithm to use</string>
+                                               </property>
+                                               <property name="alignment">
+                                                   <set>Qt::AlignCenter</set>
+                                               </property>
+                                               <property name="wordWrap">
+                                                   <bool>true</bool>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                       <item>
+                                           <widget class="QRadioButton" name="radioButton_9">
+                                               <property name="text">
+                                                   <string>Bin packing 1</string>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                       <item>
+                                           <widget class="QRadioButton" name="radioButton_13">
+                                               <property name="text">
+                                                   <string>Bin packing 2</string>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                       <item>
+                                           <widget class="QRadioButton" name="radioButton_14">
+                                               <property name="text">
+                                                   <string>Strip packing 1</string>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                       <item>
+                                           <widget class="QRadioButton" name="radioButton_12">
+                                               <property name="text">
+                                                   <string>Strip packing 2</string>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                       <item>
+                                           <widget class="QPushButton" name="pushButton_5">
+                                               <property name="text">
+                                                   <string>Optimise order quantities</string>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                       <item>
+                                           <widget class="QProgressBar" name="progressBar_5">
+                                               <property name="value">
+                                                   <number>0</number>
+                                               </property>
+                                           </widget>
+                                       </item>
+                                   </layout>
+                               </item>
+                               <item>
+                                   <spacer name="horizontalSpacer_28">
+                                       <property name="orientation">
+                                           <enum>Qt::Horizontal</enum>
+                                       </property>
+                                       <property name="sizeHint" stdset="0">
+                                           <size>
+                                               <width>40</width>
+                                               <height>20</height>
+                                           </size>
+                                       </property>
+                                   </spacer>
+                               </item>
+                           </layout>
+                       </item>
+                       <item row="0" column="0">
+                           <layout class="QHBoxLayout" name="horizontalLayout_8">
+                               <item>
+                                   <spacer name="horizontalSpacer_11">
+                                       <property name="orientation">
+                                           <enum>Qt::Horizontal</enum>
+                                       </property>
+                                       <property name="sizeHint" stdset="0">
+                                           <size>
+                                               <width>40</width>
+                                               <height>20</height>
+                                           </size>
+                                       </property>
+                                   </spacer>
+                               </item>
+                               <item>
+                                   <widget class="QLabel" name="label_20">
+                                       <property name="maximumSize">
+                                           <size>
+                                               <width>16777215</width>
+                                               <height>40</height>
+                                           </size>
+                                       </property>
+                                       <property name="font">
+                                           <font>
+                                               <family>Calisto MT</family>
+                                               <pointsize>20</pointsize>
+                                           </font>
+                                       </property>
+                                       <property name="text">
+                                           <string>Order analysis</string>
+                                       </property>
+                                   </widget>
+                               </item>
+                               <item>
+                                   <spacer name="horizontalSpacer_12">
+                                       <property name="orientation">
+                                           <enum>Qt::Horizontal</enum>
+                                       </property>
+                                       <property name="sizeHint" stdset="0">
+                                           <size>
+                                               <width>40</width>
+                                               <height>20</height>
+                                           </size>
+                                       </property>
+                                   </spacer>
+                               </item>
+                           </layout>
+                       </item>
+                   </layout>
       </widget>
       <widget class="QWidget" name="order_list">
        <layout class="QGridLayout" name="gridLayout_8">
         <item row="0" column="1">
-         <widget class="QLabel" name="label_21">
-          <property name="font">
-           <font>
-            <family>Calisto MT</family>
-            <pointsize>20</pointsize>
-           </font>
-          </property>
-          <property name="text">
-           <string>Order list</string>
-          </property>
-          <property name="alignment">
+            <widget class="QLabel" name="label_21">
+                <property name="maximumSize">
+                    <size>
+                        <width>16777215</width>
+                        <height>40</height>
+                    </size>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>Calisto MT</family>
+                        <pointsize>20</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>Order list</string>
+                </property>
+                <property name="alignment">
            <set>Qt::AlignCenter</set>
           </property>
          </widget>
@@ -2692,16 +3114,16 @@ QDateEdit::down-arrow:focus
                 </property>
                </spacer>
               </item>
-              <item>
-                  <widget class="QPushButton" name="confirmlocalOrdersButton">
-                      <property name="cursor">
-                          <cursorShape>PointingHandCursor</cursorShape>
-                      </property>
-                      <property name="text">
-                          <string>Confirm local orders</string>
-                      </property>
-                  </widget>
-              </item>
+                 <item>
+                     <widget class="QPushButton" name="confirmlocalOrdersButton">
+                         <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="text">
+                             <string>Confirm local orders</string>
+                         </property>
+                     </widget>
+                 </item>
               <item>
                <spacer name="horizontalSpacer_20">
                 <property name="orientation">
@@ -2815,13 +3237,13 @@ QDateEdit::down-arrow:focus
                 </property>
                </spacer>
               </item>
-              <item>
-                  <widget class="QPushButton" name="confirmImportOrdersButton">
-                      <property name="text">
-                          <string>Confirm orders for import</string>
-                      </property>
-                  </widget>
-              </item>
+                 <item>
+                     <widget class="QPushButton" name="confirmImportOrdersButton">
+                         <property name="text">
+                             <string>Confirm orders for import</string>
+                         </property>
+                     </widget>
+                 </item>
               <item>
                <spacer name="horizontalSpacer_18">
                 <property name="orientation">
@@ -2841,16 +3263,16 @@ QDateEdit::down-arrow:focus
           </widget>
          </widget>
         </item>
-        <item row="2" column="1">
-            <widget class="QPushButton" name="checkFeasibilityButton">
-                <property name="cursor">
-                    <cursorShape>PointingHandCursor</cursorShape>
-                </property>
-                <property name="text">
-                    <string>Check feasibility of order selections</string>
-                </property>
-            </widget>
-        </item>
+           <item row="2" column="1">
+               <widget class="QPushButton" name="checkFeasibilityButton">
+                   <property name="cursor">
+                       <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="text">
+                       <string>Check feasibility of order selections</string>
+                   </property>
+               </widget>
+           </item>
        </layout>
       </widget>
      </widget>
