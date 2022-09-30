@@ -4,7 +4,7 @@ docutils==0.16
 et-xmlfile==1.0.1
 idna==2.10
 jdcal==1.4.1
-joblib==0.16.0
+joblib==1.2.0
 numpy==1.19.1
 openpyxl==3.0.5
 pandas==1.1.1
